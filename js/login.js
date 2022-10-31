@@ -20,8 +20,8 @@ function validar() {
 }
 
 function readJSON(usuario, senha) {
-    //var file = "../json/users.json";
-    var file = "https://wilton-filho.github.io/JS-GitHub/aulas/jogo/login/json/users2.json";
+    var file = "../json/users.json";
+    // var file = "https://wilton-filho.github.io/JS-GitHub/aulas/jogo/login/json/users2.json";
     fetch(file)
         .then(response => response.json())
         .then(content => checkUser(content, usuario, senha))
@@ -37,7 +37,8 @@ function checkUser(content, usuario, senha) {
         }
     }
     if (achou)
-        alertWifi("Usuário válido!", false, 0, '../img/toupeira.gif', 30);
+        alertWifi("Usuário válido!", false, 0, 'img/toupeira.gif', 30);
     else
-        alertWifi("Usuário inválido!", false, 0, '../img/toupeira.gif', 30);
+        alertWifi("Usuário inválido!", false, 0, 'img/toupeira.gif', 30);
+
 }
