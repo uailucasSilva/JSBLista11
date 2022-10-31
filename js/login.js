@@ -4,12 +4,12 @@ function validar() {
 
     if (user.value == "") {
         // alert("Usuário não foi preenchido!");
-        alertWifi("Usuário em branco! Favor preenchê-lo", false, 0, "../img/toupeira.gif", 30);
+        alertWifi(`Usuário em branco! Favor preenchê-lo`, false, 0, "img/toupeira.gif", 30);
         user.focus();
     }
     else if (senha.value == "") {
         //  alert("Senha não foi preenchida!")
-        alertWifi("Senha em branco!  Favor preenchê-la", false, 0, "../img/toupeira.gif", 30);
+        alertWifi(`Senha em branco!  Favor preenchê-la`, false, 0, "img/toupeira.gif", 30);
         senha.focus();
     }
     else {
