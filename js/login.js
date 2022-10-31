@@ -20,7 +20,7 @@ function validar() {
 }
 
 function readJSON(usuario, senha) {
-    var file = "../json/users.json";
+    var file = "json/users.json";
     // var file = "https://wilton-filho.github.io/JS-GitHub/aulas/jogo/login/json/users2.json";
     fetch(file)
         .then(response => response.json())
